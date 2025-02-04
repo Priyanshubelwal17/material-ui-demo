@@ -5,13 +5,16 @@ import AlarmIcon from "@mui/icons-material/Alarm"
 
 import './App.css'
 import RatingDemo from './RatingDemo';
+import { TextField } from '@mui/material';
+import FormDemo from './FormDemo';
 
 function App() {
 
 
   return (
     <div className='buttons' >
-      <RatingDemo />
+      <FormDemo />
+      {/* <RatingDemo /> */}
       {/* <Button variant="text" onClick={() => alert("chudail")}>Text</Button>
       <Button color='error' variant="contained" onClick={() => alert("goo")}>click</Button>
 
