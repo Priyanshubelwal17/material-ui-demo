@@ -1,13 +1,22 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import Button from '@mui/material/Button';
+import IconButton from '@mui/material/IconButton';
+import AlarmIcon from "@mui/icons-material/Alarm"
+
 import './App.css'
 
 function App() {
 
 
   return (
-    <div></div>
+    <div className='buttons' >
+      <Button variant="text" onClick={() => alert("chudail")}>Text</Button>
+      <Button color='error' variant="contained" onClick={() => alert("goo")}>click</Button>
+
+      <IconButton color='secondary' aria-label='add on alarm'>
+        <AlarmIcon />
+      </IconButton>
+    </div>
   )
 }
 
