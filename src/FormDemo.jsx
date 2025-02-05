@@ -1,5 +1,6 @@
 import TextField from "@mui/material/TextField";
 import Slider from "@mui/material/Slider";
+import Box from "@mui/material/Box";
 import { useState } from "react";
 export default function FormDemo() {
     const [name, setName] = useState("")
@@ -12,17 +13,19 @@ export default function FormDemo() {
         setVolume(newVal)
     }
     return (
-        <div>
-            <h1>Name: {name}</h1>
+
+        <Box sx={{ border: '1px solid red', p: 2, width: 333, height: 333, margin: '0 auto' }} >
+            <h1>Name is : {name}</h1>
             <TextField
                 id="outlined-basic"
                 placeholder="Fido"
                 label="Puppy Name"
                 variant="outlined"
+                value={name}
                 onChange={updateName}
             />
             <h2>Volume:{volume}</h2>
             <Slider aria-label="Volume" value={volume} onChange={changevolume} />
-        </div>
+        </Box>
     )
 }

@@ -7,12 +7,14 @@ import './App.css'
 import RatingDemo from './RatingDemo';
 import { TextField } from '@mui/material';
 import FormDemo from './FormDemo';
+import ButtonAppBar from './Navbar';
 
 function App() {
 
 
   return (
     <div className='buttons' >
+      <ButtonAppBar />
       <FormDemo />
       {/* <RatingDemo /> */}
       {/* <Button variant="text" onClick={() => alert("chudail")}>Text</Button>
